@@ -1,0 +1,645 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+:root {
+  --base-green: #047E7B;
+  --base-green: #047E7B;
+  --base-yellow: #C6A159;
+  --base-red: #C6585C;
+  --white: #ffffff;
+  --black: #000;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  
+}
+.font-10 {
+  font-size: 10px;
+}
+.font-11 {
+  font-size: 11px;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-13 {
+  font-size: 13px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-15 {
+  font-size: 15px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.text-primary-green {
+  color: var(--base-green) !important;
+}
+.text-primary-red {
+  color: var(--base-red) !important;
+}
+.text-primary-yellow {
+  color: var(--base-yellow) !important;
+}
+.text-bold {
+  font-weight: 700;
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #dedede;
+  margin: 20px 0;
+}
+img {
+  max-width: 100%;
+}
+section {
+  padding: 55px 0 20px;
+}
+.container {
+  position: relative;
+  z-index: 11;
+}
+section.greyBg {
+  background: #f7f7f5;
+}
+section h2, section .sectionTitle {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--black);
+  font-family: 'Playfair Display', serif;
+}
+.hideWeb {
+  display: none !important;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+  padding: 0;
+  background: transparent;
+  font-size: 14px;
+}
+.breadcrumb a {
+  color: #818181;
+}
+.breadcrumb-item.active {
+  color: var(--base-yellow);
+  font-weight: 600;
+}
+
+/* Top Header CSS */
+header {
+  background: #f8f8f8;
+}
+.headerTopBar {
+  background: var(--base-green);
+  padding: 10px 0;
+}
+.headerTopBarInner {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.livioLogo {
+  max-width: 178px;
+}
+.socialIcons span img {
+  max-width: 21px;
+}
+.socialIcons span.instagram {
+  padding: 0 13px 0 10px;
+}
+.navbar-toggler {
+  border: 1px solid var(--base-green);
+}
+.navbar-toggler .bar {
+  height: 3px;
+  background: var(--base-green);
+  width: 32px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.navbar-toggler-icon {
+  display: flex;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.searchInput {
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  left: 14px;
+  top: 8px;
+}
+.searchIcon img {
+  max-width: 15px;
+}
+.form-inline.searchInput .form-control {
+  width: 281px;
+  margin-right: 30px;
+  color: #667085;
+  font-size: 14px;
+  height: 44px;
+  padding-left: 42px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
+  color: var(--base-red);
+}
+.navRightIcons {
+  display: flex;
+}
+.navRightIcons img {
+  max-width: 24px;
+}
+.navRightIcons .cartIcon {
+  position: relative;
+  margin-right: 24px;
+}
+.cartItemCount {
+  width: 14px;
+  height: 14px;
+  font-size: 7px;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--base-red);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+/* Subscription Section */
+.subscriptionSec {
+  background: url(./../images/subscriptionBg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white);
+  position: relative;
+  padding: 80px 0;
+}
+.subscriptionSec:after {
+  position: absolute;
+  content: '';
+  background: #1b1b1b;
+  opacity: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.subscriptionSec .sectionTitle {
+  color: var(--white);
+  text-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+  margin-bottom: 10px;
+}
+.subscriptionSec .subTitle {
+  text-shadow: 0px 0px 4px rgba(0,0,0,0.25);
+  margin-bottom: 25px;
+  text-align: center;
+}
+.subscriptionSec .emailSecurityText {
+  color: var(--white);
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+}
+.subscriptionSec .emailInputSect {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.subscriptionSec .emailInputSect .form-control {
+  min-height: 48px;
+  border: 0px;
+  border-radius: 4px;
+}
+.subscriptionSec .subscribeBtn {
+  width: 131px;
+  height: 48px;
+  margin-left: 15px;
+  border-radius: 4px;
+  background: var(--base-red);
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: 0px;
+}
+.emailInputSect .formGroup {
+  display: flex;
+}
+
+/* Footer Section */
+footer {
+  padding: 60px 0;
+  background: #ebebe9;
+}
+footer .livioLogo {
+  margin-bottom: 25px;
+}
+footer .copyrightText {
+  font-size: 14px;
+  color: #585857;
+  margin-bottom: 20px;
+}
+footer .quickLinks ul {
+  margin-bottom: 20px;
+  padding: 0px;
+  list-style: none;
+}
+footer .quickLinks ul li {
+  padding: 0;
+}
+footer .quickLinks ul li a {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 14px;
+}
+footer .termsLinks a {
+  color: var(--base-green);
+  font-size: 14px;
+}
+footer .termsLinks a:first-child {
+  margin-right: 20px;
+}
+footer .socialLinksTems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .singleLocation {
+  margin-bottom: 35px;
+  padding-left: 30px;
+  position: relative;
+}
+footer .singleLocation::after {
+  position: absolute;
+  width: 13px;
+  height: 16px;
+  content: '';
+  left: 10px;
+  top: 4px;
+  background: url(./../images/icons/locationIcon.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+footer .singleLocation .locationTitle {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+footer .singleLocation .locationAddress {
+  color: #585857;
+  font-size: 14px;
+}
+footer .singleLocation .locationEmail, footer .singleLocation .locationEmail a {
+  color: var(--base-green);
+  font-size: 14px;
+}
+
+
+/* Single Item CSS */
+.itemTitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--black);
+}
+.itemCode {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #585857;
+  margin-bottom: 10px;
+}
+.itemQuickInfo .itemPrice {
+  font-size: 25px;
+  line-height: 1;
+}
+.itemQuickInfo .itemPrice del {
+  font-size: 18px;
+  line-height: 1;
+}
+.singleItemPrice {
+  display: flex;
+}
+.singleItemPrice del {
+  margin-left: 10px;
+}
+.sizeVariationList ul, .sizeVariationList ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-flex;
+}
+.sizeVariationList ul li a {
+  display: inline-flex;
+    height: 48px;
+    min-width: 80px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    margin: 0 15px 10px 0;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.sizeVariationList ul li a.selected {
+  border: 1px solid var(--base-green);
+  background-color: var(--base-green);
+  color: var(--white);
+}
+.sizeVariationList ul li a:hover {
+  text-decoration: none;
+}
+.colorVariations {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.colorVariations h5, .itemDesc h5, .sizeVariations h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+.colorVariations select {
+  height: 42px;
+  width: 100%;
+  border: 1px solid #c7c5c5;
+  border-radius: 4px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 40px;
+}
+.colorSelectOption {
+  position: relative;
+}
+.colorSelectOption .selectedColor {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid #cecece;
+  margin-right: 5px;
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+.itemDesc p {
+  font-size: 14px;
+  color: var(--black);
+}
+.sizeVariations p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+}
+.quantitySec {
+  display: flex;
+  align-items: center;
+}
+.quantityLabel {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.quantity {
+  width: 95px;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+  overflow: hidden;
+}
+.quantityAddToCart {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.quantityIcon {
+  background: #F2EFEF;
+  font-size: 20px;
+  color: var(--black);
+  border: 0px;
+  width: 30px;
+}
+.quantityIcon.add {
+  border-left: 1px solid #D9D9D9;
+}
+.quantityIcon.remove {
+  border-right: 1px solid #D9D9D9;
+}
+.quantityInput {
+  font-size: 16px;
+  color: #000;
+  width: 35px;
+  text-align: center;
+  border: 0px;
+  height: 46px;
+}
+.addToCart {
+  width: 120px;
+  height: 48px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid var(--base-yellow);
+  border-radius: 4px;
+  background: var(--base-yellow);
+  color: var(--white);
+  text-transform: uppercase;
+}
+.fullDetailsButton {
+  height: 48px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  border: 1px solid var(--base-yellow);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--base-yellow);
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.fullDetailsButton:hover {
+  color: var(--base-yellow);
+  text-decoration: none;
+}
+#sync1 .owl-stage-outer, #sync2 .item {
+  border:1px solid #E3E3E3;
+  border-radius: 4px;
+}
+.owl-item.active.synced .item {
+  border: 1px solid var(--base-yellow);
+}
+.addToCart.w-100 {
+  width: 100%;
+}
+.quantityAddToCart .quantitySec {
+  margin-right: 20px;
+}
+/* Collectio Item Or Related Item Box */
+.collectionItem {
+  margin-bottom: 30px;
+}
+.collectionItem .itemImage {
+  border: 1px solid #f4f4f4;
+}
+.collectionItem .itemDesc {
+  padding: 15px;
+  background: #f7f7f5;
+}
+.collectionItem .itemDesc .itemTitle h2{
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: var(--black);
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+.itemDimenssions {
+  color: #585857;
+  font-size: 14px;
+}
+.itemPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--base-green);
+}
+.itemPrice del {
+  font-size: 12px;
+  font-weight: 400;
+  color: #585857;
+}
+.itempriceandlink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.itemQuickView {
+  width: 94px;
+  height: 32px;
+  border: 1px solid #585857;
+  border-radius: 4px;
+  color: #585857;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+.itemColors {
+  display: flex;
+  margin-bottom: 8px;
+}
+.itemColors .itemColor {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid #cecece;
+  margin-right: 5px;
+  display: inline-block;
+}
+/* Quick View Modal */
+.modal-content {
+  border: 0px;
+  border-radius: 8px;
+}
+.modal-body {
+  padding: 35px 30px;
+  position: relative;
+}
+.modalCloseButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 810px;
+}
+}
+
+/* Responsive CSS */
+@media (max-width:1199px) {
+  .form-inline.searchInput .form-control {
+    width: 150px;
+  }
+}
+@media (max-width:991px) {
+  .hideWeb {
+    display: inline-flex !important;
+  }
+  .hideMobile {
+    display: none !important;
+  }
+  .responsiveOrderThree {
+    order:3
+  }
+  .headerTopBarInner {
+    flex-wrap: wrap;
+  }
+  .headerTopBarInner .offers {
+    order: 3;
+  }
+  .navbar-brand {
+    margin-right: 0px;
+  }
+  .livioLogo {
+    max-width: 150px;
+  }
+}
+@media (max-width:767px) {
+  section {
+    padding-top:30px;
+  }
+  section h2, section .sectionTitle {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+  section.homeBestSeller {
+    padding: 30px;
+  }
+  .subscriptionSec {
+    padding: 50px 0;
+  }
+  footer {
+    padding: 30px 0;
+  }
+}
+

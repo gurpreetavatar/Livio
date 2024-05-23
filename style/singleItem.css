@@ -1,0 +1,13 @@
+/* Left Section */
+.itemDetails {
+  padding: 40px 0;
+}
+.relatedItemsSec {
+  background: #EBEBE9;
+}
+
+@media (max-width:767px) {
+  .singleItemNamePrice {
+    margin-top: 25px;
+  }
+}
